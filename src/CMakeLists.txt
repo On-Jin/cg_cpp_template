@@ -12,6 +12,8 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DLOCAL=true -DROOT_PATH=\\\"${CMAKE_CUR
 
 add_library(${NAME}_lib STATIC
         # your bot files
+        MainHandler.cpp
+        MainHandler.h
         )
 
 add_executable(bot_${NAME} main.cpp)
